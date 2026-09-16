@@ -12,10 +12,14 @@ A real-time, interactive demonstration of [Cloudflare Workflows](https://develop
 
 ## Getting Started
 
+### Prerequisites
+
+Use Node.js 22, as specified in `.nvmrc`. npm is included with Node.js.
+
 ### Installation
 
 ```bash
-npm install
+npm ci
 ```
 
 ### Development
@@ -25,6 +29,17 @@ npm run dev
 ```
 
 Visit `http://localhost:5173` to see the interactive demo.
+
+### Validation
+
+Run the same checks used by continuous integration:
+
+```bash
+npm run lint
+npm test
+npm run build
+npm run check
+```
 
 ### Deployment
 
